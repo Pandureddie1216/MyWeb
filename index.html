@@ -14,7 +14,94 @@
     />
     <!-- my style -->
     <link rel="stylesheet" href="style.css" />
+<style>
+/* ================= CONTACT SECTION ================= */
 
+.contact-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform .3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Floating Input */
+.form-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 14px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color .3s;
+  background: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Floating label */
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  color: #6b7280;
+  font-size: 14px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: .3s;
+  background: white;
+  padding: 0 6px;
+}
+
+.form-group textarea + label {
+  top: 18px;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* Button */
+.btn-modern {
+  background: linear-gradient(135deg,#2563eb,#1e40af);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(37,99,235,.35);
+}
+</style>
     <!-- bootstrap icon -->
     <link
       rel="stylesheet"
@@ -191,48 +278,86 @@
       </div>
     </section>
 
-    <!-- about -->
-    <section class="container" id="about" data-aos="fade-down">
-      <h2 class="text-center about-title">About Me</h2>
-      <div class="about-row row mt-5">
-        <div class="about-col col-sm-12 col-md-12 col-lg-5 col-xl-5">
-          <img
-            src="img/ABOUTME2.JPG"
-            class="img-about img-thumbnail"
-            width="500px"
-            alt=""
-          />
+<!-- about -->
+<section class="container" id="about" data-aos="fade-down">
+  <h2 class="text-center about-title">About Me</h2>
+
+  <div class="about-row row mt-5">
+    
+    <!-- Image -->
+    <div class="about-col col-sm-12 col-md-12 col-lg-5 col-xl-5">
+      <img
+        src="img/ABOUTME2.JPG"
+        class="img-about img-thumbnail"
+        width="500px"
+        alt="Pandu Ranga Reddy"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-4">
+
+      <h2 class="about-h2" style="font-family: Montserrat">Who Am I</h2>
+
+      <p
+        class="about-p fs-5 mt-3"
+        style="font-family: Georgia, 'Times New Roman', Times, serif"
+      >
+        Hi, I’m <b>Pandu Ranga Reddy Mulinti Gouni</b>, a passionate
+        <b>.NET Full Stack Developer</b> with hands-on experience in building
+        real-world, enterprise-grade applications.
+        I specialize in developing scalable backend systems and clean,
+        user-friendly interfaces using <b>.NET Core, ASP.NET, WPF, Web API, and SQL Server</b>.
+      </p>
+
+      <p
+        class="about-p fs-5 mt-2"
+        style="font-family: Georgia, 'Times New Roman', Times, serif"
+      >
+        I have worked on large-scale projects including government examination systems,
+        digital evaluation platforms, print & usage analytics, delivery challan
+        mobile applications, and invoice generation with dues management.
+        My work focuses on performance, data accuracy, security, and maintainability.
+      </p>
+
+      <p
+        class="about-p fs-5 mt-2"
+        style="font-family: Georgia, 'Times New Roman', Times, serif"
+      >
+        I enjoy solving complex problems, optimizing database operations,
+        and designing end-to-end solutions that are reliable and production-ready.
+        I am always eager to learn new technologies and deliver impactful software solutions.
+      </p>
+
+      <hr class="about-hr my-4" />
+
+      <!-- Personal Info -->
+      <div class="row">
+        <div class="row-col col-sm-12 col-lg-6">
+          <p class="mb-1"><b>Name:</b> Pandu Ranga Reddy MG</p>
+          <p class="row-p"><b>Role:</b> .NET Full Stack Developer</p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-4">
-          <h2 class="about-h2" style="font-family: Montserrat">Who Am I</h2>
-          <p
-            class="about-p fs-5 mt-3"
-            style="font-family: Georgia, 'Times New Roman', Times, serif"
-          >
-          Hi, I’m Pandu Ranga Reddy Mulinti Gouni, a passionate Computer Science and Engineering graduate with a knack for coding and problem-solving. With experience in languages like C, Java, and Python, I love building projects that make an impact, whether it's a responsive web app or an AI-driven solution. My internships have given me hands-on exposure to full-stack development and AI, where I’ve crafted user-friendly interfaces and worked on intelligent banking assistants. Beyond tech, I'm a chess enthusiast and have a strong connection to nature, often spending time in agricultural fields. I aim to use my skills to make technology accessible and beneficial for everyone.
-          </p
-          <hr class="about-hr my-4" />
-          <div class="row">
-            <div class="row-col col-sm-12 col-lg-6">
-              <p class="mb-1"><b>Nama</b> Pandu Reddy MG</p>
-              <p class="row-p"><b>Age</b> 22 Years</p>
-            </div>
-            <div class="row-col col-sm-12 col-lg-6">
-              <p class="mb-1"><b>Origin</b> Bengaluru, Karnataka</p>
-              <p><b>Email</b> mgpandurangareddy@gmail.com</p>
-            </div>
-          </div>
-          <div class="about-a">
-            <a
-              class="btn btn-dark mt-2 px-4 py-2"
-              onclick="PrintPDF()"
-              target="_blank"
-              >My Resume</a
-            >
-          </div>
+        <div class="row-col col-sm-12 col-lg-6">
+          <p class="mb-1"><b>Location:</b> Bengaluru, Karnataka</p>
+          <p><b>Email:</b> mgpandurangareddy@gmail.com</p>
         </div>
       </div>
-    </section>
+
+      <!-- Resume Button -->
+      <div class="about-a">
+        <a
+          class="btn btn-dark mt-3 px-4 py-2"
+          onclick="PrintPDF()"
+          target="_blank"
+        >
+          My Resume
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
  <!-- projects -->
 <section class="container" id="projects" data-aos="fade-down">
@@ -243,7 +368,7 @@
     <!-- ================= BSEB PROJECT ================= -->
     <div class="projek-col col-sm-12 col-md-6 col-lg-4" data-aos="flip-left">
       <div class="card" style="width: 20rem">
-        <img src="assets/img/bseb.png" class="card-img-top" alt="BSEB Project" />
+        <img src="img/Bseb.png" class="card-img-top" alt="BSEB Project" />
         <div class="card-body">
           <h5 class="card-title">BSEB Automation System</h5>
           <div class="mb-2">
@@ -251,11 +376,12 @@
             <span class="badge rounded-pill text-bg-secondary">SQL Server</span>
           </div>
           <p class="card-text">
-            Developed automation modules for Bihar School Examination Board including barcode scanning,
+            Developed automation modules for Bihar School Examination Board including Exam Center Allocations, barcode scanning,
             attendance, and report generation.
           </p>
           <center>
-            <a href="#" class="btn border-dark border-1">Preview</a>
+            <a href="projects/Bseb.html" class="btn border-dark border-1">Preview</a>
+
           </center>
         </div>
       </div>
@@ -264,7 +390,7 @@
     <!-- ================= DIGITAL EVALUATION ================= -->
     <div class="projek-col col-sm-12 col-md-6 col-lg-4" data-aos="flip-left">
       <div class="card" style="width: 20rem">
-        <img src="assets/img/digital-eval.png" class="card-img-top" alt="Digital Evaluation" />
+        <img src="img/DE.png" class="card-img-top" alt="Digital Evaluation" />
         <div class="card-body">
           <h5 class="card-title">Digital Evaluation System</h5>
           <div class="mb-2">
@@ -276,7 +402,7 @@
             for evaluators and administrators.
           </p>
           <center>
-            <a href="#" class="btn border-dark border-1">Preview</a>
+            <a href="projects/Digital_Evaluation.html" class="btn border-dark border-1">Preview</a>
           </center>
         </div>
       </div>
@@ -285,7 +411,7 @@
     <!-- ================= PRINT REPORTS ================= -->
     <div class="projek-col col-sm-12 col-md-6 col-lg-4" data-aos="flip-left">
       <div class="card" style="width: 20rem">
-        <img src="assets/img/print-reports.png" class="card-img-top" alt="Print Reports" />
+        <img src="img/print.png" class="card-img-top" alt="Print Reports" />
         <div class="card-body">
           <h5 class="card-title">Print & Usage Reports</h5>
           <div class="mb-2">
@@ -297,7 +423,7 @@
             summaries, and exportable reports.
           </p>
           <center>
-            <a href="#" class="btn border-dark border-1">Preview</a>
+            <a href="projects/print-reports.html"  class="btn border-dark border-1">Preview</a>
           </center>
         </div>
       </div>
@@ -306,7 +432,7 @@
     <!-- ================= DC GENERATION MOBILE APP ================= -->
     <div class="projek-col col-sm-12 col-md-6 col-lg-4 mt-4" data-aos="flip-left">
       <div class="card" style="width: 20rem">
-        <img src="assets/img/dc-mobile.png" class="card-img-top" alt="DC Mobile App" />
+        <img src="img/DC.png" class="card-img-top" alt="DC Mobile App" />
         <div class="card-body">
           <h5 class="card-title">DC Generation Mobile App</h5>
           <div class="mb-2">
@@ -318,7 +444,7 @@
             acknowledgements, and live status tracking.
           </p>
           <center>
-            <a href="#" class="btn border-dark border-1">Preview</a>
+            <a  href="projects/dc-mobile-app.html"  class="btn border-dark border-1">Preview</a>
           </center>
         </div>
       </div>
@@ -327,7 +453,7 @@
     <!-- ================= INVOICE GENERATION ================= -->
     <div class="projek-col col-sm-12 col-md-6 col-lg-4 mt-4" data-aos="flip-left">
       <div class="card" style="width: 20rem">
-        <img src="assets/img/invoice.png" class="card-img-top" alt="Invoice System" />
+        <img src="img/VGS.png" class="card-img-top" alt="Invoice System" />
         <div class="card-body">
           <h5 class="card-title">Invoice Generation & Management</h5>
           <div class="mb-2">
@@ -339,7 +465,7 @@
             PDF generation, approvals, and audit tracking.
           </p>
           <center>
-            <a href="#" class="btn border-dark border-1">Preview</a>
+            <a href="projects/invoice-management.html" class="btn border-dark border-1">Preview</a>
           </center>
         </div>
       </div>
@@ -348,134 +474,201 @@
   </div>
 </section>
 
-    <!-- skills -->
-    <section id="skills" class="py-5" data-aos="fade-down">
-      <div class="container">
-        <h2 class="text-center mb-5 skills-title">My Skills</h2>
-        <div class="row justify-content-center">
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon java">
-                <i class="fab fa-java"></i>
-              </div>
-              <h5 class="skill-name">Java</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon Php">
-                <i class="fab fa-php"></i>
-              </div>
-              <h5 class="skill-name">Php</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon bootstrap">
-                <i class="fab fa-bootstrap"></i>
-              </div>
-              <h5 class="skill-name">bootstrap</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon tailwind">
-                <i class="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 128 128"
-                    style="width: 3rem"
-                  >
-                    <path
-                      d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
-                      fill="#38bdf8"
-                    />
-                  </svg>
-                </i>
-              </div>
-              <h5 class="skill-name">JavaScript</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon python">
-                <i class="fab fa-python"></i>
-              </div>
-              <h5 class="skill-name">Python</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon canva">
-                <span class="canva-icon">C#</span>
-              </div>
-              <h5 class="skill-name">.Net</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon mysql">
-                <i class="fas fa-database"></i>
-              </div>
-              <h5 class="skill-name">MySQL</h5>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <div class="skill-card">
-              <div class="skill-icon ms-office">
-                <i class="fas fa-file-word"></i>
-              </div>
-              <h5 class="skill-name">MS Office</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- skills -->
+<section id="skills" class="py-5" data-aos="fade-down">
+  <div class="container">
+    <h2 class="text-center mb-5 skills-title">My Skills</h2>
 
-    <!-- contact -->
-    <section id="contact" data-aos="fade-down">
-      <div class="container">
-        <h2 class="text-center mb-5 contact-title">Contact</h2>
-        <div class="row justify-content-center">
-          <div class="col-11 col-lg-7">
-            <div class="card card-contact py-5 px-5">
-              <form action="https://formspree.io/f/movaqgly" method="POST">
-                <div class="mb-3">
-                  <label for="">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputNama1"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="">Message</label>
-                  <textarea
-                    name="pesan"
-                    id="pesan"
-                    class="form-control"
-                  ></textarea>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-dark px-3">
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
+    <div class="row justify-content-center">
+
+      <!-- .NET Core -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">.NET</span>
           </div>
+          <h5 class="skill-name">.NET Core</h5>
         </div>
       </div>
-    </section>
+
+      <!-- ASP.NET -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">ASP</span>
+          </div>
+          <h5 class="skill-name">ASP.NET</h5>
+        </div>
+      </div>
+
+      <!-- WPF (NEW) -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">WPF</span>
+          </div>
+          <h5 class="skill-name">WPF</h5>
+        </div>
+      </div>
+
+      <!-- ADO.NET -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon mysql">
+            <i class="fas fa-database"></i>
+          </div>
+          <h5 class="skill-name">ADO.NET</h5>
+        </div>
+      </div>
+
+      <!-- Web API -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">API</span>
+          </div>
+          <h5 class="skill-name">ASP.NET Web API</h5>
+        </div>
+      </div>
+
+      <!-- C# -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">C#</span>
+          </div>
+          <h5 class="skill-name">C#</h5>
+        </div>
+      </div>
+
+      <!-- SQL Server -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon mysql">
+            <i class="fas fa-database"></i>
+          </div>
+          <h5 class="skill-name">SQL Server</h5>
+        </div>
+      </div>
+
+      <!-- .NET MAUI -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">MAUI</span>
+          </div>
+          <h5 class="skill-name">.NET MAUI</h5>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon tailwind">
+            <i class="fab fa-js"></i>
+          </div>
+          <h5 class="skill-name">JavaScript</h5>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon bootstrap">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <h5 class="skill-name">Bootstrap</h5>
+        </div>
+      </div>
+
+      <!-- HTML & CSS -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">HTML</span>
+          </div>
+          <h5 class="skill-name">HTML & CSS</h5>
+        </div>
+      </div>
+
+      <!-- Git -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon canva">
+            <span class="canva-icon">GIT</span>
+          </div>
+          <h5 class="skill-name">Git & GitHub</h5>
+        </div>
+      </div>
+
+      <!-- Windows Desktop -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="skill-card">
+          <div class="skill-icon ms-office">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h5 class="skill-name">Windows Desktop Apps</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- contact -->
+<section id="contact" class="py-5" data-aos="fade-down">
+  <div class="container">
+    <h2 class="text-center mb-2 contact-title">Let’s Connect</h2>
+    <p class="text-center text-muted mb-5">
+      Have a project, opportunity, or question? Send me a message.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-11 col-lg-7">
+
+        <div class="contact-card">
+
+          <!-- 🔴 Replace with your Formspree URL -->
+          <form action="https://formspree.io/f/xgovgokn" method="POST">
+
+            <!-- Name -->
+            <div class="form-group floating">
+              <input type="text" name="name" required />
+              <label>Name</label>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group floating">
+              <input type="email" name="email" required />
+              <label>Email</label>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group floating">
+              <textarea name="message" rows="4" required></textarea>
+              <label>Message</label>
+            </div>
+
+            <!-- Subject -->
+            <input type="hidden" name="_subject" value="New Contact from Portfolio" />
+
+            <!-- Submit -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn-modern">
+                Send Message →
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Scroll to top -->
     <div class="button-scroll">
